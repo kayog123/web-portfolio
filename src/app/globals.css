@@ -1,26 +1,101 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: 242, 247, 255; /* HSL(226, 100%, 98%) → RGB(242, 247, 255) */
+  --foreground: rgba(28, 37, 38, 1);        /* HSL(222, 47%, 11%) → RGB(28, 37, 38) */ 
 }
 
-@theme inline {
+* {
+    /* @apply border-border; */
+    scroll-behavior: smooth;
+  }
+
+@theme inline{
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-geist-mono); 
 }
 
-@media (prefers-color-scheme: dark) {
+@theme { 
+  --color-kayog-500: oklch(0.72 0.11 178);
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.29 0.14 258);
+
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: oklch(0.29 0.14 258);
+
+  --color-primary: oklch(0.73 0.18 256);
+  --color-primary-foreground: oklch(0.95 0.02 256);
+
+  --color-secondary: oklch(0.93 0.03 256);
+  --color-secondary-foreground: oklch(0.29 0.14 258);
+
+  --color-muted: oklch(0.91 0.03 256);
+  --color-muted-foreground: oklch(0.65 0.04 260);
+
+  --color-accent: oklch(0.85 0.12 283);
+  --color-accent-foreground: oklch(0.29 0.14 258);
+
+  --color-destructive: oklch(0.67 0.20 22);
+  --color-destructive-foreground: oklch(0.95 0.02 256);
+
+  --color-border: oklch(0.88 0.04 260);
+  --color-input: oklch(0.88 0.04 260);
+  --color-ring: oklch(0.83 0.15 257);  
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif; 
+  }
+ .highlight {
+    position: relative;
+    z-index: 10;
+  }
+  .highlight::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: rgba(var(--accent), 0.4);
+    z-index: -10;
+    transform: rotate(-1deg);
+  }
+  .gradient-text {
+      background: linear-gradient(to right, var(--corlor-primary), var(--color-accent));
+      background-clip: text;
+      -webkit-background-clip: text; /* For Safari/webkit compatibility */
+      color: transparent; 
+  }
+
+.section-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media (min-width: 768px) {
+  .section-container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
+  
+

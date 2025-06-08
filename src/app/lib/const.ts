@@ -24,10 +24,22 @@ export const navItems: NavItemsProp[] = [
   { name: "Contact", href: "#contact" },
 ];
 
+export const PHONE: string = "+63 (951) 573-5250";
+export const EMAIL: string = "jovannijungco27@gmail.com";
+export const ADDRESS: string = "Bohol, PH";
+
 export const socialLinks: SocialLinksProp[] = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Mail, href: "#", label: "Email" },
+  {
+    icon: Github,
+    href: "https://github.com/kayog123/web-portfolio",
+    label: "GitHub",
+  },
+  {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/jovanni-jungco-31a819166/",
+    label: "LinkedIn",
+  },
+  { icon: Mail, href: `mailto:${EMAIL}`, label: "Email" },
 ];
 
 export const codeLines: string[] = [
@@ -173,10 +185,10 @@ export const skillCategories: SkillCategoryProps[] = [
 
 export const projects = [
   {
-    title: "Set Dialer - Real Estate Agent Dialer and Lead Management System",
+    title: "My Web Portfolio",
     description:
       "Our web app empowers real estate agents with an auto-dialer that calls leads from a CSV upload and includes in-call note-taking and lead management tools to streamline your workflow.",
-    image: "/project/set-dialer.png",
+    image: "/project/portfolio.png",
     tech: ["NextJS", "TailwindCSS"],
     liveUrl: "https://web-portfolio-five-black.vercel.app/",
     githubUrl: "https://github.com/kayog123/web-portfolio",
@@ -264,10 +276,6 @@ export const projects = [
     githubUrl: "#",
   },
 ];
-
-export const PHONE: string = "+63 (951) 573-5250";
-export const EMAIL: string = "jovannijungco27@gmail.com";
-export const ADDRESS: string = "Bohol, PH";
 
 export const contactInfo = [
   {

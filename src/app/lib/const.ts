@@ -233,7 +233,7 @@ export const projects = [
     description:
       "Update landing page, add download option of churche files and add blog page.",
     image: "/project/cttp.png",
-    tech: ["React", "Python", "FastAPI", "OpenAI", "Docker"],
+    tech: ["NextJS", "Redux", "Azure", "Onedrive API"],
     liveUrl: "https://www.cttp.org.ph/",
     githubUrl: null,
   },
@@ -242,7 +242,16 @@ export const projects = [
     description:
       "A mobile app empowering Tagbilaranons to effortlessly sell local products to tourists and locals, boosting livelihoods with a user-friendly marketplace.",
     image: "/project/livelihood.png",
-    tech: ["Vue.js", "D3.js", "Node.js", "Redis", "WebSocket"],
+    tech: [
+      "TypeScript",
+      "React",
+      "React Native",
+      "PusherJS",
+      "PlanetScale(MySQL)",
+      "AWS",
+      "Algolia",
+      "Redux",
+    ],
     liveUrl:
       "https://drive.google.com/file/d/1BrJ6ujcbphltkupJ5bK3f3NrlDQFhDam/view?usp=sharing",
     githubUrl: null,
@@ -252,7 +261,13 @@ export const projects = [
     description:
       "A mobile app designed to help tourists book tricycles, motorcycles, and SUVs at fair prices, preventing overpricing, while enabling drivers to easily secure bookings from tourists.",
     image: "/project/bbtrip.png",
-    tech: ["React Native", "Firebase", "Node.js", "JWT", "Plaid API"],
+    tech: [
+      "TypeScript",
+      "React Native",
+      "PusherJS",
+      "PlanetScale(MySQL)",
+      "AWS",
+    ],
     liveUrl:
       "https://drive.google.com/file/d/1XpIY8oJPg2ZERlCYvEXvgEdC-_MP-flu/view?usp=sharing",
     githubUrl: "#",

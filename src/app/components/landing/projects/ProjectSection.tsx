@@ -71,16 +71,18 @@ const ProjectsSection = () => {
                         Live Demo
                       </motion.a>
                     </Button>
-                    <Button size="sm" variant="outline" asChild>
-                      <motion.a
-                        href={project.githubUrl}
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        <Github size={16} className="mr-2" />
-                        Code
-                      </motion.a>
-                    </Button>
+                    {project.githubUrl && (
+                      <Button size="sm" variant="outline" asChild>
+                        <motion.a
+                          href={project.githubUrl}
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          <Github size={16} className="mr-2" />
+                          Code
+                        </motion.a>
+                      </Button>
+                    )}
                   </div>
                 </div>
 

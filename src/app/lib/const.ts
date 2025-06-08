@@ -226,7 +226,7 @@ export const projects = [
       "PusherJS",
     ],
     liveUrl: "https://nexus-odm.com/",
-    githubUrl: "#",
+    githubUrl: null,
   },
   {
     title: "Web Maintenance for Church",
@@ -235,7 +235,7 @@ export const projects = [
     image: "/project/cttp.png",
     tech: ["React", "Python", "FastAPI", "OpenAI", "Docker"],
     liveUrl: "https://www.cttp.org.ph/",
-    githubUrl: "#",
+    githubUrl: null,
   },
   {
     title: "Livelihood Mobile Application",
@@ -243,8 +243,9 @@ export const projects = [
       "A mobile app empowering Tagbilaranons to effortlessly sell local products to tourists and locals, boosting livelihoods with a user-friendly marketplace.",
     image: "/project/livelihood.png",
     tech: ["Vue.js", "D3.js", "Node.js", "Redis", "WebSocket"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl:
+      "https://drive.google.com/file/d/1BrJ6ujcbphltkupJ5bK3f3NrlDQFhDam/view?usp=sharing",
+    githubUrl: null,
   },
   {
     title: "Behold Bohol Trip Mobile App",
@@ -262,9 +263,8 @@ export const projects = [
       "This is used to manage business information that will show on the Skyride Travel Application",
     image: "/project/love-bohol.png",
     tech: ["Next.js", "AWS DynamoDB", "Algolia", "AWS S3", "MUI"],
-    liveUrl:
-      "https://drive.google.com/file/d/1XpIY8oJPg2ZERlCYvEXvgEdC-_MP-flu/view?usp=sharing",
-    githubUrl: "#",
+    liveUrl: "https://www.beholdbohol.com/",
+    githubUrl: null,
   },
   {
     title: "Set Dialer - Real Estate Agent Dialer and Lead Management System",
@@ -272,8 +272,9 @@ export const projects = [
       "Our web app empowers real estate agents with an auto-dialer that calls leads from a CSV upload and includes in-call note-taking and lead management tools to streamline your workflow.",
     image: "/project/set-dialer.png",
     tech: ["AWS", "NextJS", "GraphQL", "NoSQL", "AWS Amplify", "Twillio"],
-    liveUrl: "https://www.beholdbohol.com/",
-    githubUrl: "#",
+    liveUrl:
+      "https://drive.google.com/file/d/16ILMzy6uqzarXAx3DklfQ1JyMqha6ypN/view?usp=sharing",
+    githubUrl: null,
   },
 ];
 
@@ -282,13 +283,13 @@ export const contactInfo = [
     icon: Mail,
     label: "Email",
     value: EMAIL,
-    href: "mailto:alex@example.com",
+    href: `mailto:${EMAIL}`,
   },
   {
     icon: Phone,
     label: "Phone",
     value: PHONE,
-    href: "tel:+15551234567",
+    href: "tel:+639515735250",
   },
   {
     icon: MapPin,

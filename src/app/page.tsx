@@ -1,20 +1,24 @@
-import Layout from "./components/Layout";
-import Hero from "./components/Hero";
-import AboutSection from "./components/AboutSection";
-import SkillsSection from "./components/SkillsSection";
-import ProjectsSection from "./components/ProjectsSection";
-import TestimonialsSection from "./components/TestimonialsSection";
-import ContactSection from "./components/ContactSections";
+import {
+  Navigation,
+  HeroSection,
+  AboutSection,
+  SkillsSection,
+  ProjectSection,
+  ContactSection,
+  Footer,
+  Layout,
+} from "./components/landing";
 
 export default function Home() {
   return (
     <Layout>
-      <Hero />
+      <Navigation />
+      <HeroSection />
       <AboutSection />
       <SkillsSection />
-      <ProjectsSection />
-      <TestimonialsSection />
+      <ProjectSection />
       <ContactSection />
+      <Footer />
     </Layout>
   );
 }

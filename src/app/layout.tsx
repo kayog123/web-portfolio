@@ -13,9 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jovanni Jungco",
-  description:
-    "A passionate developer who loves helping clients build great digital experiences.",
+  title: "Jovanni Jungco Portfolio",
+  description: "A web portfolio of a software engineer",
 };
 
 export default function RootLayout({
